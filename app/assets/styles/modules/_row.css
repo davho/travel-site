@@ -2,7 +2,7 @@
 
   @mixin clearfix;
 
-  &-gitters {
+  &--gutters {
     margin-right: -65px;
   }
 
@@ -10,16 +10,32 @@
     padding-right: 65px;
   }
 
+  &--b-margin-until-medium {
+    margin-bottom: 1rem;
+  }
+
   @mixin atMedium {
+    &--b-margin-until-medium {
+      margin-bottom: 0;
+    }
     &--medium-4 {
       float: left;
       width: 33.33%;
+    }
+    &--medium-4--larger {
+      float: left;
+      width: 37%;
     }
 
     &--medium-8 {
       float: left;
       width: 66.66%;
     }
+    &--medium-8--smaller {
+      float: left;
+      width: 63%
+    }
+
   }
 
 
